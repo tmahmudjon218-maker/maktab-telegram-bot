@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: maktab-telegram-bot
+    env: python
+    region: frankfurt
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python maktab_bot.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
