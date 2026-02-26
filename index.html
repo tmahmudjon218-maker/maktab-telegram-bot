@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Welcome to Our Quiz Platform</h1>
+        <p>Your journey of knowledge starts here!</p>
+        <div class="auth-buttons">
+            <button onclick="authenticate('Google')">Login with Google</button>
+            <button onclick="authenticate('Facebook')">Login with Facebook</button>
+        </div>
+        <button onclick="initiateQuiz()">Start Quiz</button>
+    </header>
+    <script>
+        function authenticate(provider) {
+            alert('Authenticating with ' + provider);
+            // Implement authentication logic here
+        }
+
+        function initiateQuiz() {
+            alert('Quiz is starting!');
+            // Implement quiz initiation logic here
+        }
+    </script>
+</body>
+</html>
